@@ -1,0 +1,63 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: FTTO
+email: contact@ftto.kr
+description: >- # this means to ignore newlines until "baseurl:"
+  ftto는 언더씬에서 활동하는 레이블입니다. 커뮤니티보다 단단하고, 회사보단 느슨한 그런 공동체를 지향합니다. 만들고 싶은게 생기면 그냥 만듭니다. 생각만 하지 않고 그냥 만듭니다. 온라인, 오프라인 가리지 않고 그냥 만듭니다.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ftto.kr" # the base hostname & protocol for your site, e.g. http://example.com
+contacts:
+  - name: Email
+    link: mailto:contact@ftto.kr
+    label: contact@ftto.kr
+  - name: Github
+    link: https://githuub.com/ftto
+    label: "@ftto"
+  - name: Instagram
+    link: https://instagram.com/ftto4321
+    label: "@ftto4321"
+
+# Build settings
+plugins:
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
