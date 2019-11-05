@@ -28,8 +28,8 @@ contacts:
   - name: Email
     link: mailto:contact@ftto.kr
     label: contact@ftto.kr
-  - name: Github
-    link: https://githuub.com/ftto
+  - name: GitHub
+    link: https://github.com/ftto
     label: "@ftto"
   - name: Instagram
     link: https://instagram.com/ftto4321
