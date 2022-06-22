@@ -13,9 +13,7 @@ layout: default
     <div class="main__content">
       <h4>우리는 누구?</h4>
       <p>
-        ftto는 언더씬에서 활동하는 레이블입니다. 돈이 되든
-        돈이 안되든 만들고 싶은걸 만듭니다. 생각에 그치지 않고 그냥
-        만듭니다. 
+        ftto는 언더씬에서 활동하는 레이블입니다. 돈이 되든 돈이 안되든 만들고 싶은걸 만듭니다 (대개 돈이 안됩니다). 
         {% for p in site.data.projects %}
           {% if p.src %}
             <a href="{{ p.src }}" target="_blank">{{ p.name }}</a>{% if forloop.last == false %}, {% endif %}
@@ -23,7 +21,7 @@ layout: default
             {{ p.name }}{% if forloop.last == false %}, {% endif %}
           {% endif %}
         {% endfor %}
-        을 만듭니다. 망원, 뚝섬, 합정 중심으로 활동하고 있으며
+        을 만듭니다. 망원, 합정 중심으로 활동하고 있으며
         {% for p in site.data.places %}
           {% if p.src %}
             <a href="{{ p.src }}" target="_blank">{{ p.name }}</a>{% if forloop.last == false %}, {% endif %}
