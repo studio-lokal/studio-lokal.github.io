@@ -1,5 +1,7 @@
 - name: 요기더기
 - name: 아키식당
   src: https://aki-kitchen.ftto.kr
-- name: 샹송빵따곤
+- name: 샹송빵따곤(Chanson Pantagone)
   src: https://www.youtube.com/playlist?list=PLD6X5RPk5fbTSDClFXDQnvm41efmfpOiH
+- name: 탱고펜타고노(Tango Pentagono)
+  src: https://tango-pentagono.ftto.kr
