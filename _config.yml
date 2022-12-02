@@ -18,18 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: FTTO
+title: Studio Lokal
 description: >- # this means to ignore newlines until "baseurl:"
-  ftto는 언더씬에서 활동하는 레이블입니다. 커뮤니티보다 단단하고, 회사보단 느슨한 그런 공동체를 지향합니다. 만들고 싶은게 생기면 그냥 만듭니다. 생각만 하지 않고 그냥 만듭니다. 온라인, 오프라인 가리지 않고 그냥 만듭니다.
+  studio lokal은 개인들이 모여 자유롭게 작업물을 만들기 위한 레이블입니다. 커뮤니티보다 단단하고, 회사보단 느슨한 그런 공동체를 지향합니다. 만들고 싶은게 생기면 만듭니다. 온라인, 오프라인 가리지 않고 만듭니다.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ftto.kr" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://studio-lokal.kr" # the base hostname & protocol for your site, e.g. http://example.com
 contacts:
   - name: GitHub
-    link: https://github.com/ftto
-    label: "@ftto"
+    link: https://github.com/studio-lokal
+    label: "@studio-lokal"
   - name: Instagram
-    link: https://instagram.com/ftto4321
-    label: "@ftto4321"
+    link: https://www.instagram.com/studio_lokal/
+    label: "@studio_lokal"
 
 # Build settings
 plugins:

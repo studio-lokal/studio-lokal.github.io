@@ -13,7 +13,7 @@ layout: default
     <div class="main__content">
       <h4>우리는 누구?</h4>
       <p>
-        <studio lokal>는 로컬을 기반으로 하는 프로젝트 레이블입니다. 만들고 싶은 걸 만듭니다. 
+        studio lokal은 개인들이 모여 자유롭게 작업물을 만들기 위한 레이블입니다. 커뮤니티보다 단단하고, 회사보단 느슨한 그런 공동체를 지향합니다. 만들고 싶은게 생기면 만듭니다. 온라인, 오프라인 가리지 않고 만듭니다.
         {% for p in site.data.projects %}
           {% if p.src %}
             <a href="{{ p.src }}" target="_blank">{{ p.name }}</a>{% if forloop.last == false %}, {% endif %}
