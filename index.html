@@ -21,7 +21,7 @@ layout: default
             {{ p.name }}{% if forloop.last == false %}, {% endif %}
           {% endif %}
         {% endfor %}
-        을 만듭니다. {% for p in site.data.places %}
+        를 만들거나 제작에 일부 참여하였습니다. {% for p in site.data.places %}
           {% if p.src %}
             <a href="{{ p.src }}" target="_blank">{{ p.name }}</a>{% if forloop.last == false %}, {% endif %}
           {% else %}
