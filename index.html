@@ -32,6 +32,16 @@ layout: default
         현재 스튜디오로칼은 본격적인 공동체를 만들기 위한 시즌2를 구상 중에 있습니다. 조만간 새소식을 전해드리겠습니다.
       </p>
 
+      <h4>멤버 소개</h4>
+      <p>
+        {% for m in site.data.members %}
+          <b>{{ m.name }} {{ m.emoji }}</b>&nbsp; &nbsp; {{ m.description }}
+          {% if forloop.last == false %}
+            <br /><br />
+          {% endif %}
+        {% endfor %}
+      </p>
+
       <h4>연락처</h4>
       <p>
         {% for c in site.contacts %}
