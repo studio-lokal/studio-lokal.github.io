@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Studio Lokal
+title: lokal
 description: >- # this means to ignore newlines until "baseurl:"
-  studio lokal은 개인들이 모여 자유롭게 작업물을 만들기 위한 레이블입니다. 커뮤니티보다 단단하고, 회사보단 느슨한 그런 공동체를 지향합니다. 만들고 싶은게 생기면 만듭니다. 온라인, 오프라인 가리지 않고 만듭니다.
+  lokal은 장르에 구애받지 않는 개인 작업자들이 모여 다양한 방식과 형태의 결과물을 만들어 내는 곳입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://studio-lokal.kr" # the base hostname & protocol for your site, e.g. http://example.com
 contacts:
