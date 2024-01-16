@@ -76,7 +76,12 @@ layout: default
       <h4>collaborators</h4>
       <p>
         {% for m in site.data.members %}
-        <b>{{ m.name }} {{ m.emoji }}</b>&nbsp; &nbsp; {{ m.description }}
+        {% if m.link %}
+        <a href="{{ m.link }}" target="_blank"><b>{{ m.name }} {{ m.emoji }}</b></a>
+        {% else %}
+        <b>{{ m.name }} {{ m.emoji }}</b>
+        {% endif %}
+        &nbsp; &nbsp; {{ m.description }}
         {% if forloop.last == false %}
         <br /><br />
         {% endif %}
