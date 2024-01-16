@@ -11,44 +11,85 @@ layout: default
       <img src="/assets/images/logo.jpg" alt="Studio Lokal Logo">
     </div>
     <div class="main__content">
-      <h4>우리는 누구?</h4>
+      <h4>about lokal</h4>
       <p>
-        studio lokal은 개인들이 모여 자유롭게 작업물을 만들기 위한 레이블입니다. 커뮤니티보다 단단하고, 회사보단 느슨한 그런 공동체를 지향합니다. 만들고 싶은게 생기면 만듭니다. 온라인, 오프라인 가리지 않고 만듭니다.
-        {% for p in site.data.projects %}
-          {% if p.src %}
-            <a href="{{ p.src }}" target="_blank">{{ p.name }}</a>{% if forloop.last == false %}, {% endif %}
-          {% else %}
-            {{ p.name }}{% if forloop.last == false %}, {% endif %}
-          {% endif %}
-        {% endfor %}
-        를 만들거나 제작에 일부 참여하였습니다. {% for p in site.data.places %}
-          {% if p.src %}
-            <a href="{{ p.src }}" target="_blank">{{ p.name }}</a>{% if forloop.last == false %}, {% endif %}
-          {% else %}
-            {{ p.name }}{% if forloop.last == false %}, {% endif %}
-          {% endif %}
-        {% endfor %}을 본거지로 삼고 있습니다.
-
-        현재 스튜디오로칼은 본격적인 공동체를 만들기 위한 시즌2를 구상 중에 있습니다. 조만간 새소식을 전해드리겠습니다.
+        lokal은 장르에 구애받지 않는 개인 작업자들이 모여 다양한 방식과 형태의 결과물을 만들어 내는 곳입니다. 스위스와 독일을 기반으로 활동하는 디자이너와 독일의 해커 문화로부터 큰 영향을 받아
+        만들어졌습니다. 수익이 아닌 재미를 추구하는 협업부터 비영리 단체를 주된 대상으로 하는 개발 프로젝트, 그리고 다양한 주제의 워크샵을 위한 오프라인 공간을 운영합니다.
       </p>
 
-      <h4>멤버 소개</h4>
+      <h4>creative lokal</h4>
+      <p>
+        크리에이티브 로칼은 개발자, 수어통역사, 샹송가수, 그래픽 디자이너, 서비스 디자이너 등 다양한 작업자들이 따로 또 같이 모여 작업물을 만들어내는 방식입니다. 다양한 작업자들을 연결하여 재밌는
+        작업물들을 만들어냅니다. 수익보단 재미를 추구합니다. 장르에 구애받지 않는 다양한 형태의 작업물을 추구합니다. 언제나 호기심 가득하고 재밌는 모든 분야의 작업자들을 환영합니다.
+      </p>
+      <ul>
+        <li>
+          <a href="https://aki-kitchen.studio-lokal.kr">아키식당</a>: 개발자이자 수어통역사이자 일본어 석사인 아키의 일본 요리를 맛 볼 수 있는 시간입니다. 언제 열릴
+          지는 아키만 알고 있습니다.
+        </li>
+        <li>
+          <a href="https://stlk.kr/chanson-pantagon">샹송빵따곤</a>: 샹송가수로 활동하는 샹송제이와 디자이너 이진규의 협업. 모멘토 브루어스의 공간에서 이뤄진 작고
+          따뜻한 미니 공연.
+        </li>
+        <li>
+          <a href="https://tango-pentagono.studio-lokal.kr">탱고펜타고노</a>: 퇴근 후 탱고 음악 동아리라는 컨셉을 가진 퇴근탱고와 디자이너 이진규의 협업. 모멘토
+          브루어스 공간에서 이뤄진 탱고 음악회. A1 포스터 및 드립백 제작.
+        </li>
+        <li>
+          미크리프: 미리 크리스마스, 리틀 프렌즈. 로칼과 친구들이 크리스마스 파티를 기획합니다. 올 해에도 12월에 만나요. 메리 크리스마스 🎄.
+        </li>
+      </ul>
+
+      <h4>studio lokal</h4>
+      <p>
+        비영리 단체를 주된 대상으로 폭넓은 경험을 가진 작업자들을 연결하여 개발 프로젝트를 의뢰받아 진행합니다. 각 분야의 개발자와 디자이너, PM들이 협업하여 다양한 프로젝트를 진행했습니다. 비영리 단체
+        환경에 맞도록 조율하여 저비용 고효율의 작업 방식을 추구합니다.
+      </p>
+      <ul>
+        <li>
+          <a href="https://nosanjae.kr" target="_blank">
+            일하다 죽지 않을 직장 찾기
+          </a>
+        </li>
+        <li>
+          <a href="https://openwatch.kr" target="_blank">
+            오픈와치 (https://openwatch.kr)
+          </a>
+        </li>
+        <li>
+          <a href="https://newways.kr" target="_blank">뉴웨이즈</a> 서비스 전체: <a href="https://feed.newways.kr"
+            target="_blank">피드</a>, <a href="https://mate.newways.kr" target="_blank">
+            메이트
+          </a>, 관리자 사이트 등
+        </li>
+      </ul>
+
+      <h4>space lokal</h4>
+      <p>
+        로칼이 운영하는 오프라인 공간입니다. 비영리 커뮤니티 슬러기시 해커스의 정기 모임 등 다양한 주제로 워크샵을 기획합니다. 매월 넷째주 월요일에는 월간몬탁(Monthly Montag) 이라는 이름으로
+        공간을 열어놓습니다. 로칼의 모든 활동 및 멤버들에게 관심있는 분들, 로칼에서 함께 작업하고 싶은 분들, 로칼 공간을 이용하고 싶은 모든 분들을 환영합니다. 매월 공간 이벤트 정보는 별도로 공개할
+        예정입니다.<br />
+        👉 주소: 서울 마포구 독막로34길 4-5 201호
+      </p>
+
+
+      <h4>collaborators</h4>
       <p>
         {% for m in site.data.members %}
-          <b>{{ m.name }} {{ m.emoji }}</b>&nbsp; &nbsp; {{ m.description }}
-          {% if forloop.last == false %}
-            <br /><br />
-          {% endif %}
+        <b>{{ m.name }} {{ m.emoji }}</b>&nbsp; &nbsp; {{ m.description }}
+        {% if forloop.last == false %}
+        <br /><br />
+        {% endif %}
         {% endfor %}
       </p>
 
-      <h4>연락처</h4>
+      <h4>contact</h4>
       <p>
         {% for c in site.contacts %}
-          <b>{{ c.name }}</b>&nbsp;&nbsp;<a href="{{ c.link }}" target="_blank">{{ c.label }}</a>
-          {% if forloop.last == false %}
-            <br />
-          {% endif %}
+        <b>{{ c.name }}</b>&nbsp;&nbsp;<a href="{{ c.link }}" target="_blank">{{ c.label }}</a>
+        {% if forloop.last == false %}
+        <br />
+        {% endif %}
         {% endfor %}
       </p>
     </div>
