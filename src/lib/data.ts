@@ -23,10 +23,18 @@ export type Site = {
   contacts: Contact[];
 };
 
-const dataDir = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  "../data",
-);
+function resolveDataDir(): string {
+  const relativeToModule = path.join(
+    path.dirname(fileURLToPath(import.meta.url)),
+    "../data",
+  );
+  if (fs.existsSync(path.join(relativeToModule, "site.yml"))) {
+    return relativeToModule;
+  }
+  return path.join(process.cwd(), "src/data");
+}
+
+const dataDir = resolveDataDir();
 
 function readYamlFile(filename: string): unknown {
   const filePath = path.join(dataDir, filename);
