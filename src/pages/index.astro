@@ -1,10 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import ExternalLink from "../components/ExternalLink.astro";
-import { loadSite, loadMembers } from "../lib/data.ts";
-
-const site = loadSite();
-const members = loadMembers();
+import SiteNav from "../components/SiteNav.astro";
 ---
 
 <Base>
@@ -14,102 +11,33 @@ const members = loadMembers();
         <img src="/assets/images/logo.jpg" alt="Studio Lokal Logo" />
       </div>
       <div class="main__content">
+        <SiteNav />
         <h1>lokal</h1>
         <p>
           lokal은 장르에 구애받지 않는 개인 작업자들이 모여 다양한 방식과 형태의 결과물을 만들어 내는 곳입니다. 스위스와 독일을 기반으로 활동하는 디자이너와 독일의 해커 문화로부터 큰 영향을 받아
           만들어졌습니다. 수익이 아닌 재미를 추구하는 협업부터 비영리 단체를 주된 대상으로 하는 개발 프로젝트, 그리고 다양한 주제의 워크샵을 위한 오프라인 공간을 운영합니다.
         </p>
 
-        <h2>creative lokal</h2>
         <p>
-          크리에이티브 로칼은 개발자, 수어통역사, 샹송가수, 그래픽 디자이너, 서비스 디자이너 등 다양한 작업자들이 따로 또 같이 모여 작업물을 만들어내는 방식입니다. 다양한 작업자들을 연결하여 재밌는
-          작업물들을 만들어냅니다. 수익보단 재미를 추구합니다. 장르에 구애받지 않는 다양한 형태의 작업물을 추구합니다. 언제나 호기심 가득하고 재밌는 모든 분야의 작업자들을 환영합니다.
-        </p>
-        <ul>
-          <li>
-            월간 Montag: 매달에 한 번, 어느 월요일에 흥미롭고 작은 이야기를 가진 사람들이 모여 이야기를 나누는 시간입니다. 작은 살롱이란 구색을 핑계로 맛있는 술과 음악이 있습니다. 그 외엔 아무 것도 없으니 재미를 발견하는 것은 각자의 몫. 소식은 <a href="https://instagram.com/crew.lokal">로칼 인스타그램</a>을 통해 들을 수 있습니다.
-          </li>
-          <li>
-            <a href="https://aki-kitchen.lokal.works">아키식당</a>: 개발자이자 수어통역사이자 일본어 석사인 아키의 일본 요리를 맛 볼 수 있는 시간입니다. 언제 열릴
-            지는 아키만 알고 있습니다.
-          </li>
-          <li>
-            <a href="https://stlk.kr/chanson-pantagon">샹송빵따곤</a>: 샹송가수로 활동하는 샹송제이와 디자이너 이진규의 협업. 모멘토 브루어스의 공간에서 이뤄진 작고
-            따뜻한 미니 공연.
-          </li>
-          <li>
-            <a href="https://tango-pentagono.lokal.works">탱고펜타고노</a>: 퇴근 후 탱고 음악 동아리라는 컨셉을 가진 퇴근탱고와 디자이너 이진규의 협업. 모멘토
-            브루어스 공간에서 이뤄진 탱고 음악회. A1 포스터 및 드립백 제작.
-          </li>
-          <li>
-            <a href="https://www.instagram.com/donedoneclub/">던던클럽</a>: 로칼의 작업자들이 여는 마감 까페. 마감하기 전까지 나갈 수 없다. 언제 열릴 지는 갱과 아키만 알고 있다.
-          </li>
-          <li>
-            미크리프: 미리 크리스마스, 리틀 프렌즈. 로칼과 친구들이 크리스마스 파티를 기획합니다. 올 해에도 12월에 만나요. 메리 크리스마스 🎄.
-          </li>
-        </ul>
-
-        <h2>studio lokal</h2>
-        <p>
-          비영리 단체를 주된 대상으로 폭넓은 경험을 가진 작업자들을 연결하여 개발 프로젝트를 의뢰받아 진행합니다. 각 분야의 개발자와 디자이너, PM들이 협업하여 다양한 프로젝트를 진행했습니다. 비영리 단체
-          환경에 맞도록 조율하여 저비용 고효율의 작업 방식을 추구합니다.
-        </p>
-        <ul>
-          <li>
-            <ExternalLink href="https://nosanjae.kr">
-              일하다 죽지 않을 직장 찾기
-            </ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href="https://openwatch.kr">
-              오픈와치 (https://openwatch.kr)
-            </ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href="https://newways.kr">뉴웨이즈</ExternalLink> 서비스 전체: <ExternalLink href="https://feed.newways.kr">피드</ExternalLink>, <ExternalLink href="https://mate.newways.kr">
-              메이트
-            </ExternalLink>, 관리자 사이트 등
-          </li>
-        </ul>
-
-        <h2>space lokal</h2>
-        <p>
-          로칼이 운영하는 오프라인 공간 '로칼베이스' 입니다. 다양한 주제로 워크샵을 기획합니다. 매월 넷째주 월요일에는 월간몬탁(Monthly Montag) 이라는 이름으로
-          공간을 열어놓습니다. 로칼의 모든 활동 및 멤버들에게 관심있는 분들, 로칼에서 함께 작업하고 싶은 분들, 로칼 공간을 이용하고 싶은 모든 분들을 환영합니다. 매월 공간 이벤트 정보는 별도로 공개할
-          예정입니다.<br /><br />
-          👉 로칼베이스 주소: 서울 마포구 독막로34길 4-5 201호
-        </p>
-        <ul>
-          <li>
-            <ExternalLink href="https://sluggish.at">
-              슬러기시 해커스 커뮤니티 모임
-            </ExternalLink>
-          </li>
-        </ul>
-
-        <h2>collaborators</h2>
-        <p>
-          {members.map((m, i) => (
-            <>
-              {m.link ? (
-                <ExternalLink href={m.link}><b>{m.name} {m.emoji}</b></ExternalLink>
-              ) : (
-                <b>{m.name} {m.emoji}</b>
-              )}
-              &nbsp; &nbsp; {m.description}
-              {i < members.length - 1 && <><br /><br /></>}
-            </>
-          ))}
-        </p>
-
-        <h2>contact</h2>
-        <p>
-          {site.contacts.map((c, i) => (
-            <>
-              <b>{c.name}</b>&nbsp;&nbsp;<ExternalLink href={c.link}>{c.label}</ExternalLink>
-              {i < site.contacts.length - 1 && <br />}
-            </>
-          ))}
+          <b>월간 Montag</b>&nbsp;&nbsp;매달에 한 번, 어느 월요일에 흥미롭고 작은 이야기를 가진 사람들이 모여 이야기를 나누는 시간입니다. 작은 살롱이란 구색을 핑계로 맛있는 술과 음악이 있습니다. 그 외엔 아무 것도 없으니 재미를 발견하는 것은 각자의 몫. 소식은 <a href="https://instagram.com/crew.lokal">로칼 인스타그램</a>을 통해 들을 수 있습니다.
+          <br /><br />
+          <a href="https://aki-kitchen.lokal.works"><b>아키식당</b></a>&nbsp;&nbsp;개발자이자 수어통역사이자 일본어 석사인 아키의 일본 요리를 맛 볼 수 있는 시간입니다. 언제 열릴 지는 아키만 알고 있습니다.
+          <br /><br />
+          <a href="https://stlk.kr/chanson-pantagon"><b>샹송빵따곤</b></a>&nbsp;&nbsp;샹송가수로 활동하는 샹송제이와 디자이너 이진규의 협업. 모멘토 브루어스의 공간에서 이뤄진 작고 따뜻한 미니 공연.
+          <br /><br />
+          <a href="https://tango-pentagono.lokal.works"><b>탱고펜타고노</b></a>&nbsp;&nbsp;퇴근 후 탱고 음악 동아리라는 컨셉을 가진 퇴근탱고와 디자이너 이진규의 협업. 모멘토 브루어스 공간에서 이뤄진 탱고 음악회. A1 포스터 및 드립백 제작.
+          <br /><br />
+          <a href="https://www.instagram.com/donedoneclub/"><b>던던클럽</b></a>&nbsp;&nbsp;로칼의 작업자들이 여는 마감 까페. 마감하기 전까지 나갈 수 없다. 언제 열릴 지는 갱과 아키만 알고 있다.
+          <br /><br />
+          <b>미크리프</b>&nbsp;&nbsp;미리 크리스마스, 리틀 프렌즈. 로칼과 친구들이 크리스마스 파티를 기획합니다. 올 해에도 12월에 만나요. 메리 크리스마스 🎄.
+          <br /><br />
+          <ExternalLink href="https://nosanjae.kr"><b>일하다 죽지 않을 직장 찾기</b></ExternalLink>
+          <br /><br />
+          <ExternalLink href="https://openwatch.kr"><b>오픈와치 (https://openwatch.kr)</b></ExternalLink>
+          <br /><br />
+          <ExternalLink href="https://newways.kr"><b>뉴웨이즈</b></ExternalLink>&nbsp;&nbsp;서비스 전체: <ExternalLink href="https://feed.newways.kr">피드</ExternalLink>, <ExternalLink href="https://mate.newways.kr">메이트</ExternalLink>, 관리자 사이트 등
+          <br /><br />
+          <ExternalLink href="https://sluggish.at"><b>슬러기시 해커스 커뮤니티 모임</b></ExternalLink>
         </p>
       </div>
     </div>

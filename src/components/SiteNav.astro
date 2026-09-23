@@ -1,0 +1,10 @@
+---
+const pathname = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isHome = pathname === "/" || pathname === "/index.html";
+const isArchive = pathname === "/archive" || pathname === "/archive.html";
+---
+
+<nav class="site-nav" aria-label="사이트 메뉴">
+  <a href="/" aria-current={isHome ? "page" : undefined}>lokal</a>
+  <a href="/archive" aria-current={isArchive ? "page" : undefined}>archive</a>
+</nav>
